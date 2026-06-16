@@ -94,11 +94,11 @@ export const GURUS = [
 
 export const GALLERY = {
   2026: [
-    { src: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&q=80&w=1200", cat: "Grand Finale", caption: "Grand Finale, Annual Day 2026" },
-    { src: "https://images.unsplash.com/photo-1565035010268-a3816f98589a?auto=format&fit=crop&q=80&w=1200", cat: "Solo", caption: "A young vocalist takes the stage" },
-    { src: "https://images.unsplash.com/photo-1459749411175-04bf5292ceea?auto=format&fit=crop&q=80&w=1200", cat: "Group Choir", caption: "Group Choir performance" },
-    { src: "https://images.unsplash.com/photo-1578269174936-2709b6aeb913?auto=format&fit=crop&q=80&w=1200", cat: "Trophy", caption: "Trophy Distribution" },
-    { src: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&q=80&w=1200", cat: "Performance", caption: "80+ students perform" },
+    { src: "/assets/gallery2026/hosts.jpg", cat: "Hosts", caption: "Rupali Ma'am & Nilanjan Sir host the evening" },
+    { src: "/assets/gallery2026/women-choir.jpg", cat: "Group Choir", caption: "Women's choir in resplendent red" },
+    { src: "/assets/gallery2026/kids-choir.jpg", cat: "Group Choir", caption: "Our youngest students in chorus" },
+    { src: "/assets/gallery2026/finale-group.jpg", cat: "Grand Finale", caption: "Grand Finale — 80+ students on stage" },
+    { src: "/assets/gallery2026/trophies-kids.jpg", cat: "Trophy", caption: "Trophy Distribution — beaming smiles" },
     { src: "https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?auto=format&fit=crop&q=80&w=1200", cat: "Parents", caption: "Families witness the celebration" },
   ],
   2025: [

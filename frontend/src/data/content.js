@@ -11,7 +11,7 @@ export const SCHOOL = {
 export const STATS = [
   { value: "200+", label: "Students Trained" },
   { value: "13+", label: "Years of Excellence" },
-  { value: "4+", label: "Music Disciplines" },
+  { value: "5.0★", label: "On UrbanPro · 69 Reviews" },
   { value: "3–70+", label: "Student Age Range" },
 ];
 
@@ -118,31 +118,99 @@ export const GALLERY = {
 export const TESTIMONIALS = [
   {
     quote:
-      "The Guru-Shishya approach at Gurukul is truly unique. Every class is inspiring and enriching.",
-    author: "Aparna R.",
+      "Rupali Ma'am is one of the finest teachers of Hindustani classical music in Bangalore. We are blessed to have her as our guru.",
+    author: "Alokananda",
+    role: "Student",
+  },
+  {
+    quote:
+      "I have no musical background, but I love music. With a blank mind I started learning under Rupali Ma'am. In a few days I could hear music differently. Life has changed after these classes.",
+    author: "Subh",
+    role: "Adult Learner",
+  },
+  {
+    quote:
+      "Roopali Ma'am is a wonderful teacher. Her teaching style is excellent and keeps you motivated to learn more and more. Her singing gives goose bumps. Grateful to have her as my Guru.",
+    author: "Ankita",
+    role: "Student",
+  },
+  {
+    quote:
+      "Ms. Rupali is a very good teacher. She has the patience to keep students motivated and she sings beautifully herself. My daughter loves singing — I am really happy.",
+    author: "Pankaj Kasliwal",
     role: "Parent",
   },
   {
-    quote: "Rupali Ma'am's patience and dedication transformed my musical journey.",
-    author: "Sneha M.",
+    quote:
+      "Rupali hails from Visva Bharati University. You take one step and Ma'am will take the remaining 99 to make it through. The finest Hindustani classical guru in Bangalore.",
+    author: "Tossali",
     role: "Student",
   },
   {
-    quote: "Nilanjan Sir brings creativity and professionalism into every lesson.",
-    author: "Arjun K.",
+    quote:
+      "For one raga we get so many swar malikas, so many bandishes, and for each bandish she composes taans. I get a complete knowledge of every raga. In real senses, she is a GURU to me.",
+    author: "Preeti Badami",
+    role: "Parent & Student",
+  },
+  {
+    quote:
+      "She emphasises on minute details of classical singing and brings out the nuances by putting constant effort. By attending her classes I can hear my voice quality improve.",
+    author: "Sukalyan Aich",
     role: "Student",
+  },
+  {
+    quote:
+      "Ma'am is highly skilled and passionate towards music, which makes her teaching dynamic and versatile. The learning environment is positive and uplifting. Above all, an amazing human being.",
+    author: "Kapil K. C.",
+    role: "Student",
+  },
+  {
+    quote:
+      "I never realised my daughter could sing well till she joined Rupali Ma'am. A sincere teacher and a good human being. I rate her 5 stars.",
+    author: "Oindrila Majumdar",
+    role: "Parent",
+  },
+  {
+    quote:
+      "No words to explain the teaching, Ma'am. You motivate everyone. My favourite teacher in my life.",
+    author: "Basavaraj",
+    role: "Student",
+  },
+  {
+    quote:
+      "I recommend Gurukul to anyone who wants to learn music. Rupali Ma'am will definitely bring out the potential inside you. Proud to be your student.",
+    author: "Shilpa Vijay Pai",
+    role: "Student",
+  },
+  {
+    quote:
+      "A versatile singer herself, a wonderful teacher with a lot of patience. Hindustani classical, Rabindra Sangeet, English songs, Bollywood — her style is a great inspiration for my daughter.",
+    author: "Rupa Sarkar",
+    role: "Parent",
+  },
+  {
+    quote:
+      "An outstanding music teacher who pours all her passion into teaching. She brings nuances out of every student. I see my voice improving with every class.",
+    author: "Sreejesh Panicker",
+    role: "Student",
+  },
+  {
+    quote:
+      "Maam is a wonderful mentor who encourages and brings the best out of each student. Her teaching style is unlike anyone else's.",
+    author: "Deb",
+    role: "Student",
+  },
+  {
+    quote:
+      "Nice experience. My daughter is doing very well in singing. I recommend others to join these classes too.",
+    author: "Jui Roy",
+    role: "Parent",
   },
   {
     quote:
       "The Annual Day performances are beautifully organised and give students tremendous confidence.",
     author: "Mr. & Mrs. Banerjee",
     role: "Parents",
-  },
-  {
-    quote:
-      "I joined at 52 to fulfil a lifelong dream. Gurukul welcomed me as warmly as the youngest learner.",
-    author: "Lakshmi V.",
-    role: "Adult Learner",
   },
 ];
 

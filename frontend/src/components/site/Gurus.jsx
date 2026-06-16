@@ -3,13 +3,13 @@ import { GURUS } from "@/data/content";
 
 export default function Gurus() {
   return (
-    <section id="gurus" className="py-24 md:py-32 bg-[#FDFBF7]" data-testid="gurus-section">
+    <section id="gurus" className="py-24 md:py-32 bg-[#0E0908]" data-testid="gurus-section">
       <div className="max-w-7xl mx-auto px-6 md:px-10">
         <div className="max-w-3xl mb-16">
           <span className="kicker">Meet Your Gurus</span>
-          <h2 className="font-display text-5xl md:text-6xl text-[#2B1414] mt-4 leading-[0.95]">
+          <h2 className="font-display text-5xl md:text-6xl text-[#F5E9D9] mt-4 leading-[0.95]">
             Teachers who have
-            <span className="italic text-[#9C4B35]"> walked the path.</span>
+            <span className="italic text-[#E1B168]"> walked the path.</span>
           </h2>
         </div>
 
@@ -29,7 +29,7 @@ export default function Gurus() {
               <div className="lg:col-span-5">
                 <div className="relative">
                   <div className="absolute -inset-3 bg-[#E1B168]/30 rounded-2xl -z-10 translate-x-3 translate-y-3" />
-                  <div className="aspect-[3/4] overflow-hidden rounded-2xl bg-[#FAF7F2] border border-[#EADDD7]">
+                  <div className="aspect-[3/4] overflow-hidden rounded-2xl bg-[#1A1311] border border-[#3A2A26]">
                     <img src={g.photo} alt={g.name} className="w-full h-full object-cover" />
                   </div>
                 </div>
@@ -37,13 +37,13 @@ export default function Gurus() {
 
               <div className="lg:col-span-7">
                 <span className="kicker">{g.role}</span>
-                <h3 className="font-display text-4xl md:text-5xl text-[#2B1414] mt-3 leading-tight">{g.name}</h3>
-                <p className="mt-5 text-lg text-[#3A2A26] leading-relaxed">{g.bio}</p>
+                <h3 className="font-display text-4xl md:text-5xl text-[#F5E9D9] mt-3 leading-tight">{g.name}</h3>
+                <p className="mt-5 text-lg text-[#D4C2A8] leading-relaxed">{g.bio}</p>
 
                 {g.qualifications?.length > 0 && (
                   <div className="mt-8">
                     <div className="kicker mb-3">Qualifications</div>
-                    <ul className="space-y-1 text-[#3A2A26]">
+                    <ul className="space-y-1 text-[#D4C2A8]">
                       {g.qualifications.map((q) => (
                         <li key={q} className="font-serif text-lg">— {q}</li>
                       ))}
@@ -54,7 +54,7 @@ export default function Gurus() {
                 <div className="mt-8 grid sm:grid-cols-2 gap-6">
                   <div>
                     <div className="kicker mb-3">Expertise</div>
-                    <ul className="space-y-1 text-[#3A2A26]">
+                    <ul className="space-y-1 text-[#D4C2A8]">
                       {g.expertise.map((e) => (
                         <li key={e} className="text-base">· {e}</li>
                       ))}
@@ -62,7 +62,7 @@ export default function Gurus() {
                   </div>
                   <div>
                     <div className="kicker mb-3">Highlights</div>
-                    <ul className="space-y-1 text-[#3A2A26]">
+                    <ul className="space-y-1 text-[#D4C2A8]">
                       {g.highlights.map((h) => (
                         <li key={h} className="text-base">· {h}</li>
                       ))}

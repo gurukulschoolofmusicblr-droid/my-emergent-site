@@ -26,14 +26,14 @@ export default function Navbar() {
     <header
       data-testid="site-navbar"
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 ${
-        scrolled ? "bg-[#FDFBF7]/85 backdrop-blur-md border-b border-[#EADDD7]" : "bg-transparent"
+        scrolled ? "bg-[#0E0908]/85 backdrop-blur-md border-b border-[#D4C2A8]" : "bg-transparent"
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 md:px-10 py-3 flex items-center justify-between">
         <a href="#top" className="flex items-center gap-3" data-testid="navbar-logo">
           <img src={SCHOOL.logo} alt="Gurukul" className="h-12 w-12 object-contain rounded-full" />
           <div className="leading-tight">
-            <div className="font-serif text-xl text-[#2B1414]">Gurukul</div>
+            <div className="font-serif text-xl text-[#F5E9D9]">Gurukul</div>
             <div className="kicker text-[10px]">School of Music · Bangalore</div>
           </div>
         </a>
@@ -44,7 +44,7 @@ export default function Navbar() {
               key={l.href}
               href={l.href}
               data-testid={`nav-${l.label.toLowerCase()}`}
-              className="text-sm text-[#3A2A26] hover:text-[#D95D39] transition-colors duration-300"
+              className="text-sm text-[#D4C2A8] hover:text-[#E8754B] transition-colors duration-300"
             >
               {l.label}
             </a>
@@ -54,7 +54,7 @@ export default function Navbar() {
         <div className="flex items-center gap-3">
           <a
             href={`tel:${SCHOOL.phones[0]}`}
-            className="hidden md:inline-flex items-center gap-2 text-sm text-[#3A2A26] hover:text-[#D95D39]"
+            className="hidden md:inline-flex items-center gap-2 text-sm text-[#D4C2A8] hover:text-[#E8754B]"
             data-testid="navbar-phone"
           >
             <Phone className="w-4 h-4" /> {SCHOOL.phones[0]}
@@ -63,7 +63,7 @@ export default function Navbar() {
             Book Free Demo
           </a>
           <button
-            className="lg:hidden p-2 text-[#2B1414]"
+            className="lg:hidden p-2 text-[#F5E9D9]"
             onClick={() => setOpen((v) => !v)}
             aria-label="Toggle menu"
             data-testid="navbar-mobile-toggle"
@@ -74,19 +74,19 @@ export default function Navbar() {
       </div>
 
       {open && (
-        <div className="lg:hidden bg-[#FDFBF7] border-t border-[#EADDD7]" data-testid="navbar-mobile-menu">
+        <div className="lg:hidden bg-[#0E0908] border-t border-[#D4C2A8]" data-testid="navbar-mobile-menu">
           <div className="px-6 py-5 flex flex-col gap-4">
             {LINKS.map((l) => (
               <a
                 key={l.href}
                 href={l.href}
-                className="text-base text-[#3A2A26]"
+                className="text-base text-[#D4C2A8]"
                 onClick={() => setOpen(false)}
               >
                 {l.label}
               </a>
             ))}
-            <a href={`tel:${SCHOOL.phones[0]}`} className="text-sm text-[#D95D39] mt-2">
+            <a href={`tel:${SCHOOL.phones[0]}`} className="text-sm text-[#E8754B] mt-2">
               Call {SCHOOL.phones[0]}
             </a>
           </div>

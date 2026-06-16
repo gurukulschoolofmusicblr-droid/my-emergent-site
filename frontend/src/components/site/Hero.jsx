@@ -17,7 +17,7 @@ export default function Hero() {
           alt=""
           className="w-full h-full object-cover opacity-30"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#FDFBF7] via-[#FDFBF7]/70 to-[#FDFBF7]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0E0908] via-[#0E0908]/70 to-[#0E0908]" />
         <div className="absolute inset-0 mandala opacity-50" />
       </div>
 
@@ -32,11 +32,11 @@ export default function Hero() {
             animate="show"
             variants={fadeUp}
             custom={1}
-            className="font-display text-[#2B1414] mt-6 text-6xl md:text-7xl lg:text-[8.5rem]"
+            className="font-display text-[#F5E9D9] mt-6 text-6xl md:text-7xl lg:text-[8.5rem]"
             data-testid="hero-title"
           >
             Gurukul
-            <span className="block italic text-[#9C4B35] -mt-2">School of Music</span>
+            <span className="block italic text-[#E1B168] -mt-2">School of Music</span>
           </motion.h1>
 
           <motion.div
@@ -46,7 +46,7 @@ export default function Hero() {
             custom={2}
             className="ornament mt-8"
           >
-            <span className="font-serif italic text-lg text-[#9C4B35]">Nurturing Talent · Enriching Lives</span>
+            <span className="font-serif italic text-lg text-[#E1B168]">Nurturing Talent · Enriching Lives</span>
           </motion.div>
 
           <motion.p
@@ -54,9 +54,9 @@ export default function Hero() {
             animate="show"
             variants={fadeUp}
             custom={3}
-            className="mt-8 max-w-2xl text-lg md:text-xl text-[#3A2A26] leading-relaxed"
+            className="mt-8 max-w-2xl text-lg md:text-xl text-[#D4C2A8] leading-relaxed"
           >
-            Learn from experienced musicians in a nurturing <em className="font-serif text-[#D95D39]">Guru–Shishya</em> tradition.
+            Learn from experienced musicians in a nurturing <em className="font-serif text-[#E8754B]">Guru–Shishya</em> tradition.
             Whether you are a curious beginner or an advanced learner, discover the joy of music through
             personalised guidance and structured training.
           </motion.p>
@@ -74,7 +74,7 @@ export default function Hero() {
             <a href={`tel:${SCHOOL.phones[0]}`} className="btn-ghost" data-testid="hero-call-btn">
               <Phone className="w-4 h-4" /> {SCHOOL.phones[0]}
             </a>
-            <a href={`tel:${SCHOOL.phones[1]}`} className="text-sm text-[#75635E] hover:text-[#D95D39] transition-colors">
+            <a href={`tel:${SCHOOL.phones[1]}`} className="text-sm text-[#9C8B7A] hover:text-[#E8754B] transition-colors">
               or {SCHOOL.phones[1]}
             </a>
           </motion.div>
@@ -85,9 +85,9 @@ export default function Hero() {
           animate="show"
           variants={fadeUp}
           custom={5}
-          className="lg:col-span-4 lg:pl-8 lg:border-l lg:border-[#EADDD7]"
+          className="lg:col-span-4 lg:pl-8 lg:border-l lg:border-[#3A2A26]"
         >
-          <ul className="space-y-5 text-[#3A2A26]" data-testid="hero-badges">
+          <ul className="space-y-5 text-[#D4C2A8]" data-testid="hero-badges">
             {[
               ["13+", "Years of Excellence"],
               ["200+", "Students Trained"],
@@ -95,8 +95,8 @@ export default function Hero() {
               ["Online & Offline", "Classes Available"],
             ].map(([k, v]) => (
               <li key={v} className="flex items-baseline gap-4">
-                <span className="font-serif text-3xl text-[#D95D39]">{k}</span>
-                <span className="text-sm uppercase tracking-[0.18em] text-[#75635E]">{v}</span>
+                <span className="font-serif text-3xl text-[#E8754B]">{k}</span>
+                <span className="text-sm uppercase tracking-[0.18em] text-[#9C8B7A]">{v}</span>
               </li>
             ))}
           </ul>

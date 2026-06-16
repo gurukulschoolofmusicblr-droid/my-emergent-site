@@ -58,32 +58,32 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-24 md:py-32 bg-[#FDFBF7]" data-testid="contact-section">
+    <section id="contact" className="py-24 md:py-32 bg-[#0E0908]" data-testid="contact-section">
       <div className="max-w-7xl mx-auto px-6 md:px-10">
         <div className="grid lg:grid-cols-12 gap-12">
           <div className="lg:col-span-5">
             <span className="kicker">Begin your journey</span>
-            <h2 className="font-display text-5xl md:text-6xl text-[#2B1414] mt-4 leading-[0.95]">
+            <h2 className="font-display text-5xl md:text-6xl text-[#F5E9D9] mt-4 leading-[0.95]">
               Book a free
-              <span className="italic text-[#9C4B35]"> demo class.</span>
+              <span className="italic text-[#E1B168]"> demo class.</span>
             </h2>
-            <p className="mt-6 text-lg text-[#3A2A26]">
+            <p className="mt-6 text-lg text-[#D4C2A8]">
               Tell us a little about yourself and we’ll be in touch the same day. Submit the form and you’ll be redirected to WhatsApp to confirm directly with Nilanjan Sir.
             </p>
 
-            <div className="mt-10 space-y-5 text-[#3A2A26]">
+            <div className="mt-10 space-y-5 text-[#D4C2A8]">
               <a href={`tel:${SCHOOL.phones[0]}`} className="flex items-start gap-4 group" data-testid="contact-phone-1">
-                <Phone className="w-5 h-5 mt-1 text-[#D95D39]" />
+                <Phone className="w-5 h-5 mt-1 text-[#E8754B]" />
                 <div>
                   <div className="kicker">Nilanjan Sen</div>
-                  <div className="font-serif text-2xl group-hover:text-[#D95D39] transition-colors">{SCHOOL.phones[0]}</div>
+                  <div className="font-serif text-2xl group-hover:text-[#E8754B] transition-colors">{SCHOOL.phones[0]}</div>
                 </div>
               </a>
               <a href={`tel:${SCHOOL.phones[1]}`} className="flex items-start gap-4 group" data-testid="contact-phone-2">
-                <Phone className="w-5 h-5 mt-1 text-[#D95D39]" />
+                <Phone className="w-5 h-5 mt-1 text-[#E8754B]" />
                 <div>
                   <div className="kicker">Alternative</div>
-                  <div className="font-serif text-2xl group-hover:text-[#D95D39] transition-colors">{SCHOOL.phones[1]}</div>
+                  <div className="font-serif text-2xl group-hover:text-[#E8754B] transition-colors">{SCHOOL.phones[1]}</div>
                 </div>
               </a>
               <a
@@ -93,16 +93,16 @@ export default function Contact() {
                 className="flex items-start gap-4 group"
                 data-testid="contact-whatsapp"
               >
-                <MessageCircle className="w-5 h-5 mt-1 text-[#D95D39]" />
+                <MessageCircle className="w-5 h-5 mt-1 text-[#E8754B]" />
                 <div>
                   <div className="kicker">WhatsApp</div>
-                  <div className="font-serif text-2xl group-hover:text-[#D95D39] transition-colors">
+                  <div className="font-serif text-2xl group-hover:text-[#E8754B] transition-colors">
                     Chat with us <ArrowUpRight className="inline w-4 h-4" />
                   </div>
                 </div>
               </a>
               <div className="flex items-start gap-4">
-                <MapPin className="w-5 h-5 mt-1 text-[#D95D39]" />
+                <MapPin className="w-5 h-5 mt-1 text-[#E8754B]" />
                 <div>
                   <div className="kicker">Visit</div>
                   <div className="font-serif text-2xl">{SCHOOL.address}</div>
@@ -113,7 +113,7 @@ export default function Contact() {
 
           <form
             onSubmit={handleSubmit}
-            className="lg:col-span-7 bg-[#FAF7F2] border border-[#EADDD7] rounded-2xl p-7 md:p-10"
+            className="lg:col-span-7 bg-[#1A1311] border border-[#3A2A26] rounded-2xl p-7 md:p-10"
             data-testid="demo-booking-form"
           >
             <div className="grid sm:grid-cols-2 gap-5">
@@ -124,7 +124,7 @@ export default function Contact() {
                   value={form.name}
                   onChange={update("name")}
                   required
-                  className="mt-2 bg-[#FDFBF7] border-[#EADDD7] focus-visible:ring-[#D95D39]"
+                  className="mt-2 bg-[#2A1E1B] border-[#3A2A26] text-[#F5E9D9] placeholder:text-[#9C8B7A] focus-visible:ring-[#E8754B]"
                   data-testid="form-name"
                 />
               </div>
@@ -136,7 +136,7 @@ export default function Contact() {
                   value={form.phone}
                   onChange={update("phone")}
                   required
-                  className="mt-2 bg-[#FDFBF7] border-[#EADDD7]"
+                  className="mt-2 bg-[#2A1E1B] border-[#3A2A26] text-[#F5E9D9] placeholder:text-[#9C8B7A]"
                   data-testid="form-phone"
                 />
               </div>
@@ -147,7 +147,7 @@ export default function Contact() {
                   type="email"
                   value={form.email}
                   onChange={update("email")}
-                  className="mt-2 bg-[#FDFBF7] border-[#EADDD7]"
+                  className="mt-2 bg-[#2A1E1B] border-[#3A2A26] text-[#F5E9D9] placeholder:text-[#9C8B7A]"
                   data-testid="form-email"
                 />
               </div>
@@ -158,7 +158,7 @@ export default function Contact() {
                   value={form.age}
                   onChange={update("age")}
                   placeholder="e.g. 12, 35, 65"
-                  className="mt-2 bg-[#FDFBF7] border-[#EADDD7]"
+                  className="mt-2 bg-[#2A1E1B] border-[#3A2A26] text-[#F5E9D9] placeholder:text-[#9C8B7A]"
                   data-testid="form-age"
                 />
               </div>
@@ -166,7 +166,7 @@ export default function Contact() {
               <div className="sm:col-span-2">
                 <Label className="kicker">Course Interested In</Label>
                 <Select value={form.course} onValueChange={update("course")}>
-                  <SelectTrigger className="mt-2 bg-[#FDFBF7] border-[#EADDD7] h-11" data-testid="form-course">
+                  <SelectTrigger className="mt-2 bg-[#2A1E1B] border-[#3A2A26] text-[#F5E9D9] h-11" data-testid="form-course">
                     <SelectValue placeholder="Select a discipline" />
                   </SelectTrigger>
                   <SelectContent>
@@ -205,7 +205,7 @@ export default function Contact() {
                   value={form.message}
                   onChange={update("message")}
                   rows={4}
-                  className="mt-2 bg-[#FDFBF7] border-[#EADDD7]"
+                  className="mt-2 bg-[#2A1E1B] border-[#3A2A26] text-[#F5E9D9] placeholder:text-[#9C8B7A]"
                   data-testid="form-message"
                 />
               </div>
@@ -220,7 +220,7 @@ export default function Contact() {
               {loading ? "Sending…" : "Send & Continue on WhatsApp"}
               <ArrowUpRight className="w-4 h-4" />
             </button>
-            <p className="mt-3 text-xs text-[#75635E]">By submitting you agree to be contacted about your demo class.</p>
+            <p className="mt-3 text-xs text-[#9C8B7A]">By submitting you agree to be contacted about your demo class.</p>
           </form>
         </div>
       </div>

@@ -1,0 +1,110 @@
+{
+  "theme": "LIGHT",
+  "archetype": "1 (Organic & Earthy - Indian Classical Edition)",
+  "colors": {
+    "primary": "#D95D39",
+    "primary_hover": "#C04F2E",
+    "secondary": "#9C4B35",
+    "background_base": "#FDFBF7",
+    "background_alt": "#FAF7F2",
+    "text_heading": "#2B1414",
+    "text_body": "#3A2A26",
+    "text_muted": "#75635E",
+    "accent_gold": "#E1B168",
+    "border_color": "#EADDD7"
+  },
+  "typography": {
+    "font_families": {
+      "heading": "'Cormorant Garamond', serif",
+      "body": "'Manrope', sans-serif",
+      "accent": "'Inter', monospace"
+    },
+    "scales": {
+      "h1": "text-5xl md:text-6xl lg:text-7xl tracking-tighter leading-none",
+      "h2": "text-4xl md:text-5xl tracking-tight leading-tight",
+      "h3": "text-2xl md:text-3xl tracking-tight",
+      "h4": "text-xl",
+      "body": "text-base md:text-lg leading-relaxed",
+      "kicker": "text-xs md:text-sm uppercase tracking-[0.2em] font-semibold text-primary"
+    }
+  },
+  "layout": {
+    "spacing": {
+      "section_padding_y": "py-24 md:py-32",
+      "container_padding_x": "px-6 md:px-12 lg:px-24"
+    },
+    "border_radius": {
+      "images": "rounded-2xl",
+      "cards": "rounded-xl",
+      "buttons": "rounded-full"
+    }
+  },
+  "motion": {
+    "transitions": "transition-all duration-500 cubic-bezier(0.22, 1, 0.36, 1)",
+    "hover_effects": "hover:-translate-y-1 hover:shadow-xl",
+    "scroll_reveal": "staggered fade-up using framer-motion"
+  },
+  "image_urls": {
+    "logo": "/app/assets/logo.png",
+    "hero_background": "https://images.unsplash.com/photo-1658428522304-45ea885a5a11?auto=format&fit=crop&q=80&w=2000",
+    "about_ambient": "https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?auto=format&fit=crop&q=80&w=1000",
+    "course_vocal": "https://images.unsplash.com/photo-1521337581100-eac2b8b9285b?auto=format&fit=crop&q=80&w=800",
+    "course_rabindra": "https://images.unsplash.com/photo-1501504905252-473c47e087f8?auto=format&fit=crop&q=80&w=800",
+    "course_folk": "https://images.unsplash.com/photo-1460723237483-7a6dc9d0b212?auto=format&fit=crop&q=80&w=800",
+    "course_bollywood": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&q=80&w=800",
+    "gallery_2024_1": "https://images.unsplash.com/photo-1459749411175-04bf5292ceea?auto=format&fit=crop&q=80&w=800",
+    "gallery_2024_2": "https://images.unsplash.com/photo-1464375117522-131205112050?auto=format&fit=crop&q=80&w=800",
+    "gallery_2025_1": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&q=80&w=800",
+    "gallery_2025_2": "https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?auto=format&fit=crop&q=80&w=800",
+    "gallery_2026_1": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&q=80&w=800",
+    "gallery_2026_2": "https://images.unsplash.com/photo-1565035010268-a3816f98589a?auto=format&fit=crop&q=80&w=800",
+    "trophy_ceremony": "https://images.unsplash.com/photo-1578269174936-2709b6aeb913?auto=format&fit=crop&q=80&w=800",
+    "team_rupali": "/app/assets/teacher-2.jpg",
+    "team_nilanjan": "/app/assets/teacher-1.jpg"
+  },
+  "sections": [
+    {
+      "name": "Hero",
+      "guidance": "Editorial layout. Left aligned typography with large serif text. Hero background image to have a soft overlay (max 40% opacity, warm gradient). Include CTA 'Book a Free Demo Class' leading to the contact form, plus prominent phone numbers."
+    },
+    {
+      "name": "About Us & Stats",
+      "guidance": "Merge these organically. Large editorial text for the story. The stats (200+, 13+, etc.) should be large typographic elements with a staggered 'count up' animation (framer-motion + react-countup), positioned asymmetrically rather than in standard cards."
+    },
+    {
+      "name": "Courses",
+      "guidance": "A 4-column or 2x2 bento grid. Each course block should feature a beautiful background image with a dark overlay at the bottom and large serif titles. Interactive hover state revealing details."
+    },
+    {
+      "name": "Flexible Learning Options",
+      "guidance": "Minimalist text-driven section with refined iconography (phosphor icons) emphasizing Individual, Group, Online (Zoom/Meet), and Offline."
+    },
+    {
+      "name": "Meet Your Gurus",
+      "guidance": "Editorial dual-column layout. Use the provided teacher assets. Make sure photos are given an elegant aspect ratio (e.g., 3:4 portrait) with warm background offsets or borders. Large names in serif."
+    },
+    {
+      "name": "Annual Day Celebrations",
+      "guidance": "Masonry or Bento grid photo gallery. Tabs for 2024, 2025, 2026. Sub-categories visually represented or filtered. Use the stock images to build a rich narrative essay look."
+    },
+    {
+      "name": "Testimonials",
+      "guidance": "Shadcn Carousel with elegant, typography-heavy cards. Use a large serif quote mark accent. Ivory cards on a slightly darker background for contrast."
+    },
+    {
+      "name": "FAQ",
+      "guidance": "Shadcn Accordion. Keep lines clean (1px borders, #EADDD7) with the elegant serif font for questions."
+    },
+    {
+      "name": "Contact & Form",
+      "guidance": "Split layout: left side contact details and map placeholder, right side Demo booking form. Form must include Name, Phone, Email, Age, Course Interest, Mode (Online/Offline) and Message. Submit CTA uses Whatsapp integration. Form elements must use Shadcn customized to look organic (warm borders, no harsh focus rings, maybe slightly rounded)."
+    }
+  ],
+  "technical_rules": [
+    "Use framer-motion for all scroll reveals (staggerChildren).",
+    "Components must have 'data-testid' properties (e.g., data-testid='hero-cta', data-testid='demo-form-submit').",
+    "Icons should be from @phosphor-icons/react or lucide-react.",
+    "Do NOT use pure black (#000000) or pure white (#FFFFFF). Stick to the ivory and deep ink colors.",
+    "Form submission should construct a WhatsApp link and open it in a new tab."
+  ]
+}

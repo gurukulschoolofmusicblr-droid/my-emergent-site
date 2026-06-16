@@ -23,7 +23,7 @@ export const COURSES = [
     description:
       "Learn ragas, bandishes, swar malikas, voice culture, improvisation techniques, and the philosophy behind Indian classical music.",
     age: "5 Years & Above",
-    image: "/assets/gallery/trio.jpg",
+    image: "/assets/courses/hindustani.jpg",
   },
   {
     id: "rabindra",
@@ -32,7 +32,7 @@ export const COURSES = [
     description:
       "Students learn lyrical expression, musical interpretation, and classical foundations that define this rich tradition.",
     age: "5 Years & Above",
-    image: "/assets/gallery/hosts.jpg",
+    image: "/assets/courses/rabindra.jpg",
   },
   {
     id: "folk",
@@ -41,7 +41,7 @@ export const COURSES = [
     description:
       "Explore India's vibrant folk and semi-classical traditions, from soulful Bhajans to expressive Thumri and Baul.",
     age: "All Ages",
-    image: "/assets/gallery/women-choir.jpg",
+    image: "/assets/courses/folk.jpg",
   },
   {
     id: "bollywood",
@@ -50,7 +50,7 @@ export const COURSES = [
     description:
       "Master vocal techniques, breath control, stage confidence and musical understanding behind every contemporary song.",
     age: "5 Years & Above",
-    image: "/assets/gallery/kids-choir.jpg",
+    image: "/assets/courses/bollywood.webp",
   },
 ];
 

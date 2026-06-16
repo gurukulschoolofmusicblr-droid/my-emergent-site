@@ -23,8 +23,7 @@ export const COURSES = [
     description:
       "Learn ragas, bandishes, swar malikas, voice culture, improvisation techniques, and the philosophy behind Indian classical music.",
     age: "5 Years & Above",
-    image:
-      "https://images.unsplash.com/photo-1521337581100-eac2b8b9285b?auto=format&fit=crop&q=80&w=1000",
+    image: "/assets/gallery/trio.jpg",
   },
   {
     id: "rabindra",
@@ -33,8 +32,7 @@ export const COURSES = [
     description:
       "Students learn lyrical expression, musical interpretation, and classical foundations that define this rich tradition.",
     age: "5 Years & Above",
-    image:
-      "https://images.unsplash.com/photo-1501504905252-473c47e087f8?auto=format&fit=crop&q=80&w=1000",
+    image: "/assets/gallery/hosts.jpg",
   },
   {
     id: "folk",
@@ -43,8 +41,7 @@ export const COURSES = [
     description:
       "Explore India's vibrant folk and semi-classical traditions, from soulful Bhajans to expressive Thumri and Baul.",
     age: "All Ages",
-    image:
-      "https://images.unsplash.com/photo-1460723237483-7a6dc9d0b212?auto=format&fit=crop&q=80&w=1000",
+    image: "/assets/gallery/women-choir.jpg",
   },
   {
     id: "bollywood",
@@ -53,8 +50,7 @@ export const COURSES = [
     description:
       "Master vocal techniques, breath control, stage confidence and musical understanding behind every contemporary song.",
     age: "5 Years & Above",
-    image:
-      "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&q=80&w=1000",
+    image: "/assets/gallery/kids-choir.jpg",
   },
 ];
 
@@ -94,28 +90,28 @@ export const GURUS = [
 
 export const GALLERY = {
   2026: [
-    { src: "/assets/gallery2026/hosts.jpg", cat: "Hosts", caption: "Rupali Ma'am & Nilanjan Sir host the evening" },
-    { src: "/assets/gallery2026/women-choir.jpg", cat: "Group Choir", caption: "Women's choir in resplendent red" },
-    { src: "/assets/gallery2026/kids-choir.jpg", cat: "Group Choir", caption: "Our youngest students in chorus" },
-    { src: "/assets/gallery2026/finale-group.jpg", cat: "Grand Finale", caption: "Grand Finale — 80+ students on stage" },
-    { src: "/assets/gallery2026/trophies-kids.jpg", cat: "Trophy", caption: "Trophy Distribution — beaming smiles" },
-    { src: "https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?auto=format&fit=crop&q=80&w=1200", cat: "Parents", caption: "Families witness the celebration" },
+    { src: "/assets/gallery/hosts.jpg", cat: "Hosts", caption: "Rupali Ma'am & Nilanjan Sir host the evening" },
+    { src: "/assets/gallery/women-choir.jpg", cat: "Group Choir", caption: "Women's choir in resplendent red" },
+    { src: "/assets/gallery/kids-choir.jpg", cat: "Group Choir", caption: "Our youngest students in chorus" },
+    { src: "/assets/gallery/finale-choir.jpg", cat: "Grand Finale", caption: "Grand Finale — 80+ students on stage" },
+    { src: "/assets/gallery/trophies-kids.jpg", cat: "Trophy", caption: "Trophy Distribution — beaming smiles" },
+    { src: "/assets/gallery/trio.jpg", cat: "Solo & Duet", caption: "A trio in perfect harmony" },
   ],
   2025: [
+    { src: "/assets/gallery/lamp-lighting.jpg", cat: "Inauguration", caption: "Lamp lighting ceremony with our chief guest" },
+    { src: "/assets/gallery/trophies-kids.jpg", cat: "Trophy", caption: "Trophy Distribution — Annual Day 2025" },
+    { src: "/assets/gallery/hosts.jpg", cat: "Hosts", caption: "Rupali Ma'am & Nilanjan Sir on stage" },
     { src: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&q=80&w=1200", cat: "Performance", caption: "Annual Day 2025 highlights" },
-    { src: "https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?auto=format&fit=crop&q=80&w=1200", cat: "Solo", caption: "Solo performance" },
     { src: "https://images.unsplash.com/photo-1464375117522-131205112050?auto=format&fit=crop&q=80&w=1200", cat: "Group Choir", caption: "Choir under the lights" },
     { src: "https://images.unsplash.com/photo-1459749411175-04bf5292ceea?auto=format&fit=crop&q=80&w=1200", cat: "Grand Finale", caption: "Closing moments" },
-    { src: "https://images.unsplash.com/photo-1565035010268-a3816f98589a?auto=format&fit=crop&q=80&w=1200", cat: "Solo", caption: "Young performer" },
-    { src: "https://images.unsplash.com/photo-1578269174936-2709b6aeb913?auto=format&fit=crop&q=80&w=1200", cat: "Trophy", caption: "Trophy ceremony" },
   ],
   2024: [
+    { src: "/assets/gallery/finale-choir.jpg", cat: "Group Choir", caption: "Grand choir on stage — Annual Day 2024" },
+    { src: "/assets/gallery/trio.jpg", cat: "Solo & Duet", caption: "A trio in perfect harmony" },
+    { src: "/assets/gallery/lamp-lighting.jpg", cat: "Inauguration", caption: "Lamp lighting ceremony" },
     { src: "https://images.unsplash.com/photo-1459749411175-04bf5292ceea?auto=format&fit=crop&q=80&w=1200", cat: "Performance", caption: "Annual Day 2024" },
-    { src: "https://images.unsplash.com/photo-1464375117522-131205112050?auto=format&fit=crop&q=80&w=1200", cat: "Group Choir", caption: "Choir on stage" },
     { src: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&q=80&w=1200", cat: "Grand Finale", caption: "Finale tableau" },
-    { src: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&q=80&w=1200", cat: "Performance", caption: "Recital evening" },
     { src: "https://images.unsplash.com/photo-1578269174936-2709b6aeb913?auto=format&fit=crop&q=80&w=1200", cat: "Trophy", caption: "Recognising dedication" },
-    { src: "https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?auto=format&fit=crop&q=80&w=1200", cat: "Parents", caption: "Parents & students" },
   ],
 };
 

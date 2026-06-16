@@ -3,7 +3,7 @@ import { Phone, MessageCircle, MapPin } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-b from-[#0E0908] to-[#000000] text-[#F5E9D9] pt-20 pb-10 border-t border-[#3A2A26]" data-testid="site-footer">
+    <footer className="bg-gradient-to-b from-[#07050A] to-[#000000] text-[#F5E9D9] pt-20 pb-10 border-t border-[#3A2A26]" data-testid="site-footer">
       <div className="max-w-7xl mx-auto px-6 md:px-10">
         <div className="grid md:grid-cols-12 gap-10">
           <div className="md:col-span-5">

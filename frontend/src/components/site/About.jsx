@@ -3,7 +3,7 @@ import { STATS } from "@/data/content";
 
 export default function About() {
   return (
-    <section id="about" className="relative py-24 md:py-32 bg-[#1A1311]" data-testid="about-section">
+    <section id="about" className="relative py-24 md:py-32 bg-[#100A10]" data-testid="about-section">
       <div className="max-w-7xl mx-auto px-6 md:px-10">
         <div className="grid lg:grid-cols-12 gap-12">
           <div className="lg:col-span-5">

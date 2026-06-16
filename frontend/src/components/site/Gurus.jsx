@@ -3,7 +3,7 @@ import { GURUS } from "@/data/content";
 
 export default function Gurus() {
   return (
-    <section id="gurus" className="py-24 md:py-32 bg-[#0E0908]" data-testid="gurus-section">
+    <section id="gurus" className="py-24 md:py-32 bg-[#07050A]" data-testid="gurus-section">
       <div className="max-w-7xl mx-auto px-6 md:px-10">
         <div className="max-w-3xl mb-16">
           <span className="kicker">Meet Your Gurus</span>
@@ -29,7 +29,7 @@ export default function Gurus() {
               <div className="lg:col-span-5">
                 <div className="relative">
                   <div className="absolute -inset-3 bg-[#E1B168]/30 rounded-2xl -z-10 translate-x-3 translate-y-3" />
-                  <div className="aspect-[3/4] overflow-hidden rounded-2xl bg-[#1A1311] border border-[#3A2A26]">
+                  <div className="aspect-[3/4] overflow-hidden rounded-2xl bg-[#100A10] border border-[#3A2A26]">
                     <img src={g.photo} alt={g.name} className="w-full h-full object-cover" />
                   </div>
                 </div>

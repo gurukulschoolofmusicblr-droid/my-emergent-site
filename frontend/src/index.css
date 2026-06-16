@@ -6,10 +6,10 @@
 
 :root {
     /* Warm Dark Premium */
-    --bg-base: #0E0908;
-    --bg-alt: #1A1311;
-    --bg-card: #211816;
-    --bg-elev: #2A1E1B;
+    --bg-base: #07050A;
+    --bg-alt: #100A10;
+    --bg-card: #181014;
+    --bg-elev: #211418;
     --ink: #F5E9D9;
     --ink-soft: #D4C2A8;
     --muted: #9C8B7A;
@@ -41,6 +41,43 @@ body {
     font-family: 'Cormorant Garamond', serif;
     letter-spacing: -0.02em;
     line-height: 0.95;
+}
+
+.font-grand {
+    font-family: 'Cinzel', 'Cormorant Garamond', serif;
+    letter-spacing: 0.04em;
+}
+
+.font-indic {
+    font-family: 'Yatra One', 'Cinzel', serif;
+    letter-spacing: 0.02em;
+}
+
+/* Hero gold-saffron gradient text */
+.text-tilak {
+    background: linear-gradient(180deg, #F4D8A3 0%, #E1B168 35%, #C9613B 70%, #9C3D24 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 1px 0 rgba(225, 177, 104, 0.05);
+    filter: drop-shadow(0 4px 24px rgba(232, 117, 75, 0.18));
+}
+
+/* Faint paisley-rangoli pattern */
+.pattern-rangoli {
+    background-image:
+        radial-gradient(circle at 20% 30%, rgba(225, 177, 104, 0.06) 0%, transparent 25%),
+        radial-gradient(circle at 80% 70%, rgba(232, 117, 75, 0.05) 0%, transparent 30%),
+        repeating-radial-gradient(circle at 50% 50%, rgba(225, 177, 104, 0.025) 0px, rgba(225, 177, 104, 0.025) 1px, transparent 2px, transparent 40px);
+}
+
+/* Diya (oil-lamp) flicker glow */
+@keyframes flicker {
+    0%, 100% { opacity: 0.55; transform: scale(1); }
+    50% { opacity: 0.8; transform: scale(1.04); }
+}
+.diya-glow {
+    animation: flicker 4s ease-in-out infinite;
 }
 
 .kicker {
@@ -133,8 +170,28 @@ body {
     transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
     background: linear-gradient(180deg, var(--bg-card), var(--bg-alt));
 }
-.course-card img { transition: transform 1.2s cubic-bezier(0.22, 1, 0.36, 1); }
-.course-card:hover img { transform: scale(1.08); }
+.course-card .img-wrap {
+    position: relative;
+    overflow: hidden;
+}
+.course-card .img-wrap::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(180deg, rgba(10, 6, 5, 0) 40%, rgba(10, 6, 5, 0.85) 100%),
+        linear-gradient(0deg, rgba(180, 80, 40, 0.08), rgba(180, 80, 40, 0.08));
+    pointer-events: none;
+    mix-blend-mode: multiply;
+}
+.course-card img {
+    transition: transform 1.2s cubic-bezier(0.22, 1, 0.36, 1), filter 0.6s;
+    filter: brightness(0.82) saturate(1.05) contrast(0.96);
+}
+.course-card:hover img {
+    transform: scale(1.08);
+    filter: brightness(0.95) saturate(1.1) contrast(1);
+}
 
 .mandala {
     background-image: radial-gradient(circle at center, rgba(225, 177, 104, 0.08) 0%, transparent 60%),

@@ -11,7 +11,7 @@ export default function Gallery() {
   const items = GALLERY[year];
 
   return (
-    <section id="annual-day" className="py-24 md:py-32 bg-[#1A1311]" data-testid="annual-day-section">
+    <section id="annual-day" className="py-24 md:py-32 bg-[#100A10]" data-testid="annual-day-section">
       <div className="max-w-7xl mx-auto px-6 md:px-10">
         <div className="grid lg:grid-cols-12 gap-10 items-end mb-12">
           <div className="lg:col-span-7">
@@ -34,7 +34,7 @@ export default function Gallery() {
                 key={y}
                 value={y}
                 data-testid={`gallery-year-${y}`}
-                className="tab-pill rounded-full border border-[#3A2A26] bg-[#0E0908] text-[#F5E9D9] px-5 py-2 text-sm hover:border-[#E8754B] transition-colors"
+                className="tab-pill rounded-full border border-[#3A2A26] bg-[#07050A] text-[#F5E9D9] px-5 py-2 text-sm hover:border-[#E8754B] transition-colors"
               >
                 Annual Day {y}
               </TabsTrigger>
@@ -77,8 +77,8 @@ export default function Gallery() {
                           className="w-full h-full object-cover aspect-square transition-transform duration-700 group-hover:scale-110"
                           loading="lazy"
                         />
-                        <figcaption className="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-[#F5E9D9]/85 to-transparent text-[#0E0908] opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                          <Badge className="bg-[#E8754B] hover:bg-[#E8754B] text-[#0E0908] mb-2">{img.cat}</Badge>
+                        <figcaption className="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-[#F5E9D9]/85 to-transparent text-[#07050A] opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                          <Badge className="bg-[#E8754B] hover:bg-[#E8754B] text-[#07050A] mb-2">{img.cat}</Badge>
                           <div className="font-serif text-base leading-snug">{img.caption}</div>
                         </figcaption>
                       </motion.figure>

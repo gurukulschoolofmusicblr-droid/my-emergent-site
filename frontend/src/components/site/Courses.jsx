@@ -3,7 +3,7 @@ import { COURSES } from "@/data/content";
 
 export default function Courses() {
   return (
-    <section id="courses" className="py-24 md:py-32 bg-[#0E0908]" data-testid="courses-section">
+    <section id="courses" className="py-24 md:py-32 bg-[#07050A]" data-testid="courses-section">
       <div className="max-w-7xl mx-auto px-6 md:px-10">
         <div className="grid lg:grid-cols-12 gap-10 items-end mb-14">
           <div className="lg:col-span-7">
@@ -27,10 +27,10 @@ export default function Courses() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
               transition={{ delay: i * 0.08, duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-              className="course-card group bg-[#1A1311] border border-[#3A2A26]"
+              className="course-card group bg-[#100A10] border border-[#3A2A26]"
               data-testid={`course-card-${c.id}`}
             >
-              <div className="aspect-[16/10] overflow-hidden">
+              <div className="img-wrap aspect-[16/10] overflow-hidden">
                 <img src={c.image} alt={c.name} className="w-full h-full object-cover" loading="lazy" />
               </div>
               <div className="p-7 md:p-9">

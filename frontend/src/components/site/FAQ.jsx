@@ -3,7 +3,7 @@ import { FAQS } from "@/data/content";
 
 export default function FAQ() {
   return (
-    <section id="faq" className="py-24 md:py-32 bg-[#1A1311]" data-testid="faq-section">
+    <section id="faq" className="py-24 md:py-32 bg-[#100A10]" data-testid="faq-section">
       <div className="max-w-5xl mx-auto px-6 md:px-10">
         <div className="grid md:grid-cols-12 gap-8 mb-12 items-end">
           <div className="md:col-span-7">

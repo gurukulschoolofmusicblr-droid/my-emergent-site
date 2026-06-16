@@ -4,6 +4,7 @@ export const SCHOOL = {
   tagline: "Nurturing Talent. Enriching Lives.",
   phones: ["9880080535", "6360493447"],
   whatsapp: "9880080535",
+  emails: ["sennilanjan79@gmail.com", "senrupalee79@gmail.com"],
   address: "Kaggadasapura Road, Bangalore, Karnataka",
   logo: "/assets/logo.png",
 };

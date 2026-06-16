@@ -1,5 +1,5 @@
 import { SCHOOL } from "@/data/content";
-import { Phone, MessageCircle, MapPin } from "lucide-react";
+import { Phone, MessageCircle, MapPin, Mail } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -37,6 +37,8 @@ export default function Footer() {
               <li className="flex items-center gap-3"><Phone className="w-4 h-4 text-[#E8754B]" /> <a href={`tel:${SCHOOL.phones[0]}`} className="hover:text-[#E8754B] transition-colors">{SCHOOL.phones[0]}</a></li>
               <li className="flex items-center gap-3"><Phone className="w-4 h-4 text-[#E8754B]" /> <a href={`tel:${SCHOOL.phones[1]}`} className="hover:text-[#E8754B] transition-colors">{SCHOOL.phones[1]}</a></li>
               <li className="flex items-center gap-3"><MessageCircle className="w-4 h-4 text-[#E8754B]" /> <a href={`https://wa.me/91${SCHOOL.whatsapp}`} target="_blank" rel="noopener noreferrer" className="hover:text-[#E8754B] transition-colors">WhatsApp Chat</a></li>
+              <li className="flex items-start gap-3"><Mail className="w-4 h-4 mt-1 text-[#E8754B]" /> <a href={`mailto:${SCHOOL.emails[0]}`} className="hover:text-[#E8754B] transition-colors break-all">{SCHOOL.emails[0]}</a></li>
+              <li className="flex items-start gap-3"><Mail className="w-4 h-4 mt-1 text-[#E8754B]" /> <a href={`mailto:${SCHOOL.emails[1]}`} className="hover:text-[#E8754B] transition-colors break-all">{SCHOOL.emails[1]}</a></li>
               <li className="flex items-start gap-3"><MapPin className="w-4 h-4 mt-1 text-[#E8754B]" /> {SCHOOL.address}</li>
             </ul>
           </div>

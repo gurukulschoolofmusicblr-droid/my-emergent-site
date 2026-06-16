@@ -1,7 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import { toast } from "sonner";
-import { MapPin, Phone, MessageCircle, ArrowUpRight } from "lucide-react";
+import { MapPin, Phone, MessageCircle, Mail, ArrowUpRight } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
@@ -108,6 +108,20 @@ export default function Contact() {
                   <div className="font-serif text-2xl">{SCHOOL.address}</div>
                 </div>
               </div>
+              <a href={`mailto:${SCHOOL.emails[0]}`} className="flex items-start gap-4 group" data-testid="contact-email-1">
+                <Mail className="w-5 h-5 mt-1 text-[#E8754B]" />
+                <div>
+                  <div className="kicker">Nilanjan Sen · Email</div>
+                  <div className="font-serif text-xl md:text-2xl group-hover:text-[#E8754B] transition-colors break-all">{SCHOOL.emails[0]}</div>
+                </div>
+              </a>
+              <a href={`mailto:${SCHOOL.emails[1]}`} className="flex items-start gap-4 group" data-testid="contact-email-2">
+                <Mail className="w-5 h-5 mt-1 text-[#E8754B]" />
+                <div>
+                  <div className="kicker">Rupali Sen Mukherjee · Email</div>
+                  <div className="font-serif text-xl md:text-2xl group-hover:text-[#E8754B] transition-colors break-all">{SCHOOL.emails[1]}</div>
+                </div>
+              </a>
             </div>
           </div>
 

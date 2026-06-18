@@ -46,7 +46,11 @@ export default function Footer() {
 
         <div className="mt-14 pt-6 border-t border-[#3A2A26] flex flex-col md:flex-row justify-between gap-3 text-xs text-[#9C8B7A]">
           <div>© {new Date().getFullYear()} Gurukul School of Music. All rights reserved.</div>
-          <div>Crafted with care · Bangalore, India</div>
+          <div className="flex items-center gap-4">
+            <span>Crafted with care · Bangalore, India</span>
+            <span className="text-[#3A2A26]">·</span>
+            <a href="/admin/login" className="hover:text-[#E1B168] transition-colors" data-testid="footer-admin-link">Admin</a>
+          </div>
         </div>
       </div>
     </footer>

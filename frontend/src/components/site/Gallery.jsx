@@ -28,8 +28,9 @@ export default function Gallery() {
 
   const merged = (y) => {
     const dynamic = dynamicByYear[y] || [];
-    if (dynamic.length > 0) return dynamic;
-    return STATIC_GALLERY[y] || [];
+    const staticItems = STATIC_GALLERY[y] || [];
+    // Dynamic (admin uploads) shown first, then static curated photos
+    return [...dynamic, ...staticItems];
   };
 
   const items = merged(year);

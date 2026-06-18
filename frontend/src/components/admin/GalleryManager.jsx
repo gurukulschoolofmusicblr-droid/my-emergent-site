@@ -44,7 +44,7 @@ export default function GalleryManager() {
       fd.append("caption", caption);
       fd.append("order", 0);
       fd.append("file", file);
-      await api.post("/admin/gallery", fd, { headers: { "Content-Type": "multipart/form-data" } });
+      await api.post("/admin/gallery", fd);
       toast.success("Image uploaded");
       setCaption("");
       if (fileRef.current) fileRef.current.value = "";

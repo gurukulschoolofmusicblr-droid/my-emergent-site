@@ -11,7 +11,8 @@ export default function Testimonials() {
       .get("/testimonials")
       .then((res) => {
         if (Array.isArray(res.data) && res.data.length > 0) {
-          setList(res.data);
+          // Show admin-added testimonials first, then curated static reviews
+          setList([...res.data, ...STATIC_TESTIMONIALS]);
         }
       })
       .catch(() => {});

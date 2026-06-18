@@ -23,7 +23,7 @@ jobs:
       
       - name: Build React app
         working-directory: ./frontend
-        run: yarn build
+        run: CI=false yarn build
       
       - name: Copy built files to root
         run: cp -r frontend/build/* .

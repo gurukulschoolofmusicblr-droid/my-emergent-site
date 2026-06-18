@@ -1,7 +1,22 @@
+import { useEffect, useState } from "react";
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel";
-import { TESTIMONIALS } from "@/data/content";
+import { TESTIMONIALS as STATIC_TESTIMONIALS } from "@/data/content";
+import { api } from "@/lib/api";
 
 export default function Testimonials() {
+  const [list, setList] = useState(STATIC_TESTIMONIALS);
+
+  useEffect(() => {
+    api
+      .get("/testimonials")
+      .then((res) => {
+        if (Array.isArray(res.data) && res.data.length > 0) {
+          setList(res.data);
+        }
+      })
+      .catch(() => {});
+  }, []);
+
   return (
     <section id="testimonials" className="py-24 md:py-32 bg-[#07050A]" data-testid="testimonials-section">
       <div className="max-w-7xl mx-auto px-6 md:px-10">
@@ -15,9 +30,9 @@ export default function Testimonials() {
 
         <Carousel opts={{ align: "start", loop: true }} className="w-full">
           <CarouselContent className="-ml-4">
-            {TESTIMONIALS.map((t, i) => (
-              <CarouselItem key={i} className="pl-4 md:basis-1/2 lg:basis-1/3" data-testid={`testimonial-${i}`}>
-                <figure className="h-full bg-[#100A10] border border-[#3A2A26] rounded-2xl p-8 md:p-10 flex flex-col">
+            {list.map((t, i) => (
+              <CarouselItem key={t.id || i} className="pl-4 md:basis-1/2 lg:basis-1/3" data-testid={`testimonial-${i}`}>
+                <figure className="h-full surface p-8 md:p-10 flex flex-col">
                   <span className="font-serif text-7xl leading-none text-[#E8754B] -mt-2">“</span>
                   <blockquote className="font-serif text-xl md:text-2xl text-[#F5E9D9] leading-snug mt-2 flex-1">
                     {t.quote}

@@ -1,14 +1,38 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
-import { GALLERY } from "@/data/content";
+import { GALLERY as STATIC_GALLERY } from "@/data/content";
+import { api } from "@/lib/api";
 
 const YEARS = ["2026", "2025", "2024"];
 
 export default function Gallery() {
   const [year, setYear] = useState("2026");
-  const items = GALLERY[year];
+  const [dynamicByYear, setDynamicByYear] = useState({ 2024: [], 2025: [], 2026: [] });
+
+  useEffect(() => {
+    api
+      .get("/gallery")
+      .then((res) => {
+        const grouped = { 2024: [], 2025: [], 2026: [] };
+        (res.data || []).forEach((it) => {
+          if (grouped[it.year]) {
+            grouped[it.year].push({ src: it.image_data, cat: it.category, caption: it.caption });
+          }
+        });
+        setDynamicByYear(grouped);
+      })
+      .catch(() => {});
+  }, []);
+
+  const merged = (y) => {
+    const dynamic = dynamicByYear[y] || [];
+    if (dynamic.length > 0) return dynamic;
+    return STATIC_GALLERY[y] || [];
+  };
+
+  const items = merged(year);
 
   return (
     <section id="annual-day" className="py-24 md:py-32 bg-[#100A10]" data-testid="annual-day-section">
@@ -34,7 +58,7 @@ export default function Gallery() {
                 key={y}
                 value={y}
                 data-testid={`gallery-year-${y}`}
-                className="tab-pill rounded-full border border-[#3A2A26] bg-[#07050A] text-[#F5E9D9] px-5 py-2 text-sm hover:border-[#E8754B] transition-colors"
+                className="tab-pill rounded-full border border-[#3A2A26] bg-[#07050A] text-[#D4C2A8] px-5 py-2 text-sm hover:border-[#E8754B] transition-colors"
               >
                 Annual Day {y}
               </TabsTrigger>
@@ -52,32 +76,24 @@ export default function Gallery() {
                   transition={{ duration: 0.5 }}
                   className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4"
                 >
-                  {GALLERY[y].map((img, i) => {
-                    // Asymmetric editorial bento spans
-                    const spans = [
-                      "row-span-2",
-                      "",
-                      "",
-                      "col-span-2",
-                      "",
-                      "",
-                    ];
+                  {merged(y).map((img, i) => {
+                    const spans = ["row-span-2", "", "", "col-span-2", "", ""];
                     return (
                       <motion.figure
-                        key={img.src + i}
+                        key={(img.src || "") + i}
                         initial={{ opacity: 0, scale: 0.98 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ delay: i * 0.06, duration: 0.6 }}
-                        className={`relative overflow-hidden rounded-xl border border-[#3A2A26] group ${spans[i] || ""}`}
+                        className={`relative overflow-hidden rounded-xl border border-[#3A2A26] group ${spans[i % spans.length] || ""}`}
                         data-testid={`gallery-img-${y}-${i}`}
                       >
                         <img
                           src={img.src}
-                          alt={img.caption}
+                          alt={img.caption || img.cat || ""}
                           className="w-full h-full object-cover aspect-square transition-transform duration-700 group-hover:scale-110"
                           loading="lazy"
                         />
-                        <figcaption className="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-[#F5E9D9]/85 to-transparent text-[#07050A] opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                        <figcaption className="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-[#07050A] to-transparent text-[#F5E9D9] opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                           <Badge className="bg-[#E8754B] hover:bg-[#E8754B] text-[#07050A] mb-2">{img.cat}</Badge>
                           <div className="font-serif text-base leading-snug">{img.caption}</div>
                         </figcaption>
